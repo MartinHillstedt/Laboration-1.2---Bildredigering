@@ -1,0 +1,58 @@
+
+:root {
+--sand: #e8dcbc;
+--sand-light: #f2ead3;
+--oken: #c7b078;
+--ljusgron: #a3b58d;
+--mossa: #4d6a38;
+--morkgron: #243420;
+
+--font-head: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+--font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+--maxw: 70rem;
+
+}
+
+body {
+    margin: 0;
+    background: var(--sand);
+    color: var(--morkgron);
+    font-family: var(--font-body)
+   
+}
+
+a {
+    color: var(--mossa);
+}
+
+a:hover {
+    color: var(--oken);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap {
+    width:min(100% - 2rem, var(--maxw));
+    margin-inline: auto;
+}
+
+.site-header {
+  background: var(--forest);
+  color: var(--sand-light);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+ 
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.6rem;
+}
