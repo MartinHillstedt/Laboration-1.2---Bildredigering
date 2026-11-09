@@ -5,14 +5,18 @@
 --oken: #c7b078;
 --ljusgron: #a3b58d;
 --mossa: #4d6a38;
---sten: #726f70;
+--sten: #535252;
 
 --font-head: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 --maxw: 70rem;
-
+--gap: clamp(1rem, 2.5vw, 1.75rem)
 }
+
+
+
+
 
 body {
     margin: 0;
@@ -23,11 +27,11 @@ body {
 }
 
 a {
-    color: var(--mossa);
+    color: var(--oken);
 }
 
 a:hover {
-    color: var(--oken);
+    color: var(--mossa);
 }
 
 img {
@@ -53,6 +57,7 @@ h3 {
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 0.6em;
+  
 }
  
 h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); }
@@ -120,7 +125,7 @@ p {
 }
  
 .nav a:hover {
-  background: rgba(242, 234, 211, 0.15);
+  background: rgba(15, 15, 15, 0.15);
 }
  
 .nav a[aria-current="page"] {
@@ -132,7 +137,7 @@ p {
   .nav-button {
     display: block;
     padding: 0.5rem 1rem;
-    border: 2px solid var(--oken);
+    border: 2px solid var(--ljusgron);
     border-radius: 999px;
     cursor: pointer;
     font-weight: 500;
@@ -196,4 +201,35 @@ p {
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0;
+}
+
+/*Grid för förstasidan*/
+
+.intro {
+  background: var(--sten);
+}
+ 
+.intro .wrap {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  align-items: start;
+}
+
+.tools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0,5rem;
+}
+ 
+.tools li {
+  background: var(--sand-light);
+  color: var(--oken);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
