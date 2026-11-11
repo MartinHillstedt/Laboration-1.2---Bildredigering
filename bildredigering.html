@@ -1,112 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>   
-<meta charset="utf-8">
-<meta name="viewport" content="width = device-width, initial-scale=1.0">
-<title>Bildredigering Lab 1.2 - Bildredigering</title>
-<meta name="description" content="Bildserie med originalbilder och redigerade diton">
-<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-<link rel="shortcut icon" href="/images/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Hillstedt" />
-<link rel="manifest" href="/images/site.webmanifest" />
-<link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <title>Bildredigering Lab 1.2 - Bildredigering</title>
+    <meta
+      name="description"
+      content="Bildserie med originalbilder och redigerade diton"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Hillstedt" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="site-header">
       <div class="wrap">
-    <a class="logo" href="index.html">
-        <img src="images/logosmallny1.svg" alt="">
-    </a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Visa eller dölj menyn">
-      <label for="nav-toggle" class="nav-button">Meny</label>
-    <nav class="nav" aria-label="huvudmeny">
-        <ul>
+        <a class="logo" href="index.html">
+          <img src="images/logosmallny1.svg" alt="" />
+        </a>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Visa eller dölj menyn"
+        />
+        <label for="nav-toggle" class="nav-button">Meny</label>
+        <nav class="nav" aria-label="huvudmeny">
+          <ul>
             <li><a href="index.html">Hem</a></li>
-            <li><a href="bildredigering.html" aria-current="page">Bildredigering</a></li>
+            <li>
+              <a href="bildredigering.html" aria-current="page"
+                >Bildredigering</a
+              >
+            </li>
             <li><a href="om-mig.html">Om mig</a></li>
-        </ul>
-    </nav>
-      </div> 
-      
-      <main>
-    <section class="section">
-      <div class="wrap">
-        <h1>Bildredigering</h1>
-        <p>
-          Här visas tre av bilderna i serien. Först visas originalet och sedan den redigerade bilden.
-        </p>
- 
-        <article class="edit-block">
-          <h2>Bild 1</h2>
-          <div class="compare">
-            <figure>
-              <img src="images/bilserie010.jpeg" alt="Originalbilden före redigering" loading="lazy">
-              <figcaption>Före</figcaption>
-            </figure>
-            <figure>
-              <img src="images/bildserie010-redigerad.jpeg" alt="Den redigerade bilden" loading="lazy">
-              <figcaption>Efter</figcaption>
-            </figure>
-          </div>
-          <div class="edit-text">
-            <p>
-              I bild ett har jag gjort färgtemperaturen kallare, vilket var det enskilt mest altererande attributet. Jag ökade ljusstyrkan en del och kontrasten marginellt. Färgbalansen i högdagrarna fick 	mer emfas av cyan och blått så att himlen skulle bli klarare. I mellantonerna ökade jag det röda marginellt och det gula markant för att få kossan, örontaggarna och blommorna att synas bättre. Mer 	cyan i skuggorna gjorde att det vita i bergen kom fram tydligare. Nyanserna i färgerna behölls sedan oförändrade men jag drog ner mättnaden och ljusheten i dom. Jag nyttjade allt som allt fem 	separata lager i Photoshop, det var hue/saturation, color and vibrance, brightness/contrast, clarity and dehaze samt color balance. Sedan storleksändrade jag bilden från 4000x3000px till 2000x1500px 	och komprimerade den från 15,4mb till 580,5kb.   
-              </p>
-          </div>
-        </article>
- 
-        
-        <article class="edit-block">
-          <h2>Bild 2</h2>
-          <div class="compare">
-            <figure>
-              <img src="images/bilserie005.jpeg" alt="Originalbilden före redigering" loading="lazy">
-              <figcaption>Före</figcaption>
-            </figure>
-            <figure>
-              <img src="images/bildserie005-redigeradfinal.jpeg" alt="Den redigerade bilden" loading="lazy">
-              <figcaption>Efter</figcaption>
-            </figure>
-          </div>
-          <div class="edit-text">
-            <p>
-              I bild två har jag utfört en skönhetsoperation på den här kattens minst sagt unika heterokromi genom att med lassoverktyget ringa in vänsterögat i ett lager och färgändra det lokalt så det 	numer matchar det högra. Här tyckte jag att färgbalansen i övrigt var rätt ok och stämde bra in med den lite kallare tonen på bild ett därför har jag bara ökat mättnaden marginellt för att få 	chokladtonerna i pälsen att komma fram lite tydligare. Det vart bättre men jag tyckte att kissen fortfarande saknade lite stuns så jag drog upp kontrasten ganska ordentligt. Den blurrade 	stolen/soffan och kudden upplevde jag inte tillförde något till bilden så jag valde att ta bort dom med clone stamp verktyget, det blev en del duttande med färgvalspipetten på väggen och bordet för 	att försöka jämna till det och få det att se någorlunda naturligt ut. Storleksändrade bilden från originalets 3000x4000px till 2000x2667px och komprimerade från 7,5mb till 561,8kb.     
-            </p>
-          </div>
-        </article>
- 
-        
-        <article class="edit-block">
-          <h2>Bild 3</h2>
-          <div class="compare">
-            <figure>
-              <img src="images/bilserie012.jpeg" alt="Originalbilden före redigering" loading="lazy">
-              <figcaption>Före</figcaption>
-            </figure>
-            <figure>
-              <img src="images/bildserie012-redigeradfinal.jpeg" alt="Den redigerade bilden" loading="lazy">
-              <figcaption>Efter</figcaption>
-            </figure>
-          </div>
-          <div class="edit-text">
-            <p>
-              I bild tre har jag gjort den här jycken lite mer färgglad. Jag använde lassoverktyget för att fånga in separata delar av hunden och lade sedan ett enfärgat lager på området med solid color, 		color fill, inverterade lagret och ändrade blending mode från normal till color. Sedan använde jag olika penselstorlekar och stilar för att måla på bruna, svarta, vita, gröna och grå nyanser 		för att försöka få det att se (någorlunda) naturligt ut. Först efter flertalet timmars knåpande inser jag att det finns en funktion som automatiskt markerar och avgränsar objektet (object 		selection tool) istället för att man ska sitta och zooma med lasson. För att färgerna skulle se än mer naturliga ut och kontrasten mot bakgrunden skulle bli mindre tydlig har jag genom 		individuella lager dragit ner ljusstyrkan kraftigt, ökat färgtemperaturen något, dragit upp lystern ordentligt (vibrance) i alla färger överlag samt överexponerat nosen och delar av golvet 		för att få till en glänsande men inte överdriven effekt. Vad gäller färgbalansen har jag egentligen bara ökat marginellt på blått och rött i mellantonerna, resterande är lämnat oförändrat.
-		Vovven har tappat en del vikt och är komprimerad från 5,63mb till 585,3kb och storleken är ändrad från 4000x3000px till 2000x1500px    
-            </p>
-          </div>
-        </article>
+          </ul>
+        </nav>
       </div>
-    </section>
-  </main>
- 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>Martin Hillstedt – webbuppgift i bildbehandling</p>
-    </div>
-  </footer>
-    </header>
-</body> 
+</header>
+
+      <main>
+        <section class="section">
+          <div class="wrap wrap-bred">
+            <h1>Bildredigering</h1>
+            <p>
+              Här visas tre av bilderna i serien. Först visas originalet och
+              sedan den redigerade bilden.
+            </p>
+
+            <article class="edit-block">
+              <h2>Bild 1</h2>
+              <div class="compare">
+                <figure>
+                  <img
+                    src="images/bilserie010.jpg"
+                    alt="Originalbilden före redigering"
+                    loading="lazy"
+                  />
+                  <figcaption>Före</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/bildserie010-redigerad.jpg"
+                    alt="Den redigerade bilden"
+                    loading="lazy"
+                  />
+                  <figcaption>Efter</figcaption>
+                </figure>
+              </div>
+              <div class="edit-text">
+                <p>
+                  I bild ett har jag gjort färgtemperaturen kallare, vilket var
+                  det enskilt mest altererande attributet. Jag ökade ljusstyrkan
+                  en del och kontrasten marginellt. Färgbalansen i högdagrarna
+                  fick mer emfas av cyan och blått så att himlen skulle bli
+                  klarare. I mellantonerna ökade jag det röda marginellt och det
+                  gula markant för att få kossan, örontaggarna och blommorna att
+                  synas bättre. Mer cyan i skuggorna gjorde att det vita i
+                  bergen kom fram tydligare. Nyanserna i färgerna behölls sedan
+                  oförändrade men jag drog ner mättnaden och ljusheten i dom.
+                  Jag nyttjade allt som allt fem separata lager i Photoshop, det
+                  var hue/saturation, color and vibrance, brightness/contrast,
+                  clarity and dehaze samt color balance. Sedan storleksändrade
+                  jag bilden från 4000x3000px till 2000x1500px och komprimerade
+                  den från 15,4mb till 580,5kb.
+                </p>
+              </div>
+            </article>
+
+            <article class="edit-block">
+              <h2>Bild 2</h2>
+              <div class="compare compare-staende">
+                <figure>
+                  <img
+                    src="images/bilserie005.jpg"
+                    alt="Originalbilden före redigering"
+                    loading="lazy"
+                  />
+                  <figcaption>Före</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/bildserie005-redigeradfinal.jpg"
+                    alt="Den redigerade bilden"
+                    loading="lazy"
+                  />
+                  <figcaption>Efter</figcaption>
+                </figure>
+              </div>
+              <div class="edit-text">
+                <p>
+                  I bild två har jag utfört en skönhetsoperation på den här
+                  kattens minst sagt unika heterokromi genom att med
+                  lassoverktyget ringa in vänsterögat i ett lager och färgändra
+                  det lokalt så det numer matchar det högra. Här tyckte jag att
+                  färgbalansen i övrigt var rätt ok och stämde bra in med den
+                  lite kallare tonen på bild ett därför har jag bara ökat
+                  mättnaden marginellt för att få chokladtonerna i pälsen att
+                  komma fram lite tydligare. Det vart bättre men jag tyckte att
+                  kissen fortfarande saknade lite stuns så jag drog upp
+                  kontrasten ganska ordentligt. Den blurrade stolen/soffan och
+                  kudden upplevde jag inte tillförde något till bilden så jag
+                  valde att ta bort dom med clone stamp verktyget, det blev en
+                  hel del duttande med färgvalspipetten på väggen och bordet för att
+                  försöka jämna till och efterlikna ljusgradienten på väggen och få det
+                  att se någorlunda naturligt ut. Storleksändrade bilden från originalets 
+                  3000x4000px till2000x2667px och komprimerade från 7,5mb till 561,8kb.
+                </p>
+              </div>
+            </article>
+
+            <article class="edit-block">
+              <h2>Bild 3</h2>
+              <div class="compare">
+                <figure>
+                  <img
+                    src="images/bilserie012.jpg"
+                    alt="Originalbilden före redigering"
+                    loading="lazy"
+                  />
+                  <figcaption>Före</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/bildserie012-redigeradfinal.jpg"
+                    alt="Den redigerade bilden"
+                    loading="lazy"
+                  />
+                  <figcaption>Efter</figcaption>
+                </figure>
+              </div>
+              <div class="edit-text">
+                <p>
+                  I bild tre har jag gjort den här jycken lite mer färgglad. Jag
+                  använde lassoverktyget för att fånga in separata delar av
+                  hunden och lade sedan ett enfärgat lager på området med solid
+                  color, color fill, inverterade lagermasken och ändrade blending
+                  mode från normal till color. Sedan använde jag olika
+                  penselstorlekar och stilar för att måla på bruna, svarta,
+                  vita, gröna och grå nyanser för att försöka få det att se
+                  (någorlunda) naturligt ut. Först efter flertalet timmars
+                  knåpande inser jag att det finns en funktion som automatiskt
+                  markerar och avgränsar objektet (object selection tool)
+                  istället för att man ska sitta och zooma med lasson. För att
+                  färgerna skulle se än mer naturliga ut och kontrasten mot
+                  bakgrunden skulle bli mindre tydlig har jag genom individuella
+                  lager dragit ner ljusstyrkan kraftigt, ökat färgtemperaturen
+                  något, dragit upp lystern ordentligt (vibrance) i alla färger
+                  överlag samt underexponerat nosen och delar av golvet för att
+                  få till en mer dämpad glänsande effekt. Vad gäller
+                  färgbalansen har jag egentligen bara ökat marginellt på blått
+                  och rött i mellantonerna, resterande är lämnat oförändrat.
+                  Vovven har tappat en del digital vikt och är komprimerad från 5,63mb
+                  till 585,3kb och storleken är ändrad från 4000x3000px till
+                  2000x1500px
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap">
+          <p>Martin Hillstedt – webbuppgift i bildbehandling</p>
+        </div>
+      </footer>
+    
+  </body>
 </html>

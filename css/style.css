@@ -11,7 +11,7 @@
   --font-head: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  
-  --maxw: 70rem;
+  --maxw: 90rem;
   --gap: clamp(1rem, 2.5vw, 1.75rem);
 }
  
@@ -257,4 +257,80 @@ p {
   object-fit: cover;
   border-radius: 0.35rem;
   background: var(--sandgra);
+}
+
+/*Före och efter på bildredigering*/
+
+.wrap-bred {
+  width: min(100% - 2rem, 145rem);
+}
+
+.compare {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.compare-staende {
+    max-width: 75%;
+    margin-inline: auto;
+}
+
+@media (max-width: 51rem) {
+    .compare-staende {
+
+    }
+}
+
+.compare img {
+  width: 100%;
+  border-radius: 0.35rem;
+  background: var(--sandgra);
+}
+
+.compare figcaption {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--rost);
+}
+
+/*Varje redigerad bild med förklaring*/
+
+.edit-block {
+  padding-block: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.edit-block + .edit-block {
+  border-top: 2px solid var(--sandgra);
+}
+
+/*Textrutan med förklaring*/
+
+.edit-text {
+  background: var(--kalkvit-ljus);
+  border-left: 6px solid var(--rost);
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+.edit-text p:last-child {
+  margin-bottom: 0;
+}
+
+.edit-text p {
+    max-width: 115ch;
+}
+/*Sidfot*/
+
+.site-footer {
+  background: var(--morkgron);
+  color: var(--kalkvit);
+  padding-block: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+  max-width: none;
 }
